@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0616;
+  color: #eae6ff;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #120726;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  z-index: 1000;
+}
+
+.logo {
+  color: #a78bfa;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #eae6ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #a78bfa;
+}
+
+.menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.small {
+  color: #c4b5fd;
+}
+
+h1 {
+  font-size: 46px;
+  margin: 10px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #c4b5fd;
+}
+
+h3 {
+  color: #a78bfa;
+}
+
+.desc {
+  max-width: 600px;
+  margin: 15px 0;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 25px;
+  margin-right: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.primary {
+  background: #8b5cf6;
+  color: white;
+}
+
+.outline {
+  border: 2px solid #8b5cf6;
+  color: #c4b5fd;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #140a2e;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(139,92,246,0.15);
+}
+
+.tech {
+  display: inline-block;
+  margin-top: 10px;
+  color: #c4b5fd;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #c4b5fd;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #120726;
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  .menu {
+    display: block;
+  }
+}
